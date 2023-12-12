@@ -1,0 +1,66 @@
+* {
+    /* 背景的设置 */
+    background-color: #f07400;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Hiragino Sans GB, Tahoma, Helvetica, Arial, Microsoft YaHei, WenQuanYi Micro Hei, 黑体, 宋体, sans-serif;
+    font-weight: 300;
+    /* 将所有盒子（包括 body 标签）的边框内外边距全部设置为 0，这样 body 内的元素就会 “紧贴着” 浏览器的边框防止而没有空白*/
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+header {
+    /* 标题的样式 */
+    background-color: #a55e01a2;
+    margin: 0;
+    border: 0;
+    font-size: 30px;
+}
+
+p[class="intro"] {
+    /* ]介绍栏样式 */
+    background-color: #878a04;
+    color: #000;
+    font-size: large;
+    font-weight:lighter;
+}
+
+div[class="main"] {
+    /* 框架的样式 */
+    display: flex;
+    flex-direction: row;
+    min-width: 1080px;
+    max-width: 1080px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+}
+
+div[class="left-side-index"] {
+    /* 框架中的索引区域的样式 */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(197, 100, 9);
+}
+
+div[class="left-side-main"] {
+    /* 框架中的主要区域的样式 */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(197, 100, 9);
+}
+
+a[class="left-side"] {
+    display: block;
+    background-color: #f00;
+    color: #00f;
+    min-width: 3em;
+    min-height: 3em;
+    text-align: center;
+    line-height: 3em;
+    font-family: serif;
+    font-size: 20px;
+    text-decoration: none;
+}
