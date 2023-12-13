@@ -1,6 +1,6 @@
 * {
     /* 背景的设置 */
-    background-color: #f07400d0;
+    background-color: burlywood;
     color: #000000;
     font-size: 16px;
     font-family: Hiragino Sans GB, Tahoma, Helvetica, Arial, Microsoft YaHei, WenQuanYi Micro Hei, 黑体, 宋体, sans-serif;
@@ -13,7 +13,7 @@
 
 header {
     /* 标题的样式 */
-    background-color: #a55e01a2;
+    background-color: burlywood;
     margin: 0;
     border: 0;
     font-size: 30px;
@@ -22,7 +22,7 @@ header {
 
 p[class="intro"] {
     /* ]介绍栏样式 */
-    background-color: #878a04;
+    background-color: #a9ac1c;
     color: #000;
     font-size: large;
     font-weight:500;
@@ -49,7 +49,7 @@ div[class="main"] {
     display: flex;
     flex-direction: row;
     min-width: 300px;
-    background-color: rgb(197, 100, 9);
+    background-color: rgba(197, 126, 60, 0.616);
     margin: auto;
     /* padding: 1px; */
 }
@@ -58,7 +58,7 @@ div[class="left-side-index"] {
     /* 框架中的索引区域的样式 */
     display: flex;
     flex-direction: column;
-    background-color: rgb(197, 100, 9);
+    background-color: rgb(209, 130, 56);
 }
 
 div[class="frame"] {
@@ -85,8 +85,9 @@ div[class="article"] {
     display: flex;
     flex-direction: column;
     max-width: 960px;
-    background-color: rgb(197, 100, 9);
-    padding: 1em;
+    /* background-color: rgb(197, 100, 9); */
+    padding: 1em 1em 10em 1em;
+    margin: 1em 10em 10em 10em;
 }
 
 a[class="left-side-button"] {
@@ -113,4 +114,8 @@ a[class="top-side-button"] {
     font-family: serif;
     font-size: 20px;
     text-decoration: none;
+}
+
+div p {
+    padding-top: 20px;
 }
