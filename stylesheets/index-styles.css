@@ -9,6 +9,8 @@
     padding: 0;
     margin: 0;
     border: 0;
+    /* 所有盒模型的尺寸从外边界开始计算 */
+    box-sizing: border-box;
 }
 
 header {
@@ -86,13 +88,14 @@ div[class="article"] {
     flex-direction: column;
     max-width: 960px;
     /* background-color: rgb(197, 100, 9); */
+    margin: 3em 10em 10em 10em;
     padding: 1em 1em 10em 1em;
-    margin: 1em 10em 10em 10em;
 }
 
 a[class="left-side-button"] {
     /* display: flex;
     flex-direction: column; */
+    box-sizing: border-box;
     background-color: rgb(160, 81, 7);
     color: rgb(65, 32, 3);
     min-width: 4em;
@@ -102,9 +105,26 @@ a[class="left-side-button"] {
     font-family: serif;
     font-size: 20px;
     text-decoration: none;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
 }
 
 a[class="top-side-button"] {
+    box-sizing: border-box;
+    background-color: rgb(160, 81, 7);
+    color: rgb(65, 32, 3);
+    min-width: 4em;
+    min-height: 3em;
+    line-height: 3em;
+    font-family: serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+a[class="top-side-button"]:first-child {
+    box-sizing: border-box;
     display: block;
     background-color: rgb(160, 81, 7);
     color: rgb(65, 32, 3);
@@ -114,8 +134,11 @@ a[class="top-side-button"] {
     font-family: serif;
     font-size: 20px;
     text-decoration: none;
+    border-top: unset;
+    border-left: 3px solid #000;
+    border-bottom: 3px solid #000;
+    border-left: unset;
 }
-
 div p {
     padding-top: 20px;
 }
